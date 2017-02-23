@@ -24,7 +24,7 @@
 
 	.hero-header-1 .owl-controls {
 	    position: absolute;
-	    left: -50px;
+	    left: 0;
 	    width: 100%;
 	    bottom: 20px;
 	}
@@ -81,5 +81,17 @@
 
 	.main-services-1 .table-wrapper {
 		width: 100%;
+	}
+
+	.main-text {
+	    position: absolute;
+	    top: 30%;
+	    left: 15%;
+	    z-index: 10;
+	}
+
+	.search-wrapper.focused {
+	    width: 300px;
+	    margin-right: -20px;
 	}
 }
