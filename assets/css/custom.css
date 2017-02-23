@@ -1723,6 +1723,20 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     transition: all .4s ease;
 }
 
+.main-services-1 .table-wrapper {
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 3s;	
+}
+
+.main-services-1 .table-wrapper:nth-child(2) {
+	-webkit-animation-delay: 2s;
+	-webkit-animation-duration: 3s;}
+
+.main-services-1 .table-wrapper:nth-child(3) {
+	-webkit-animation-delay: 3s;
+	-webkit-animation-duration: 3s;
+}
+
 .main-services-1 .table-wrapper:hover .main-services > i {
     color: #fe6600;
 }
@@ -1857,6 +1871,11 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     top: 30%;
     left: 30%;
     z-index: 10;
+}
+
+.main-text h1 {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
 }
 
 .searchable {
