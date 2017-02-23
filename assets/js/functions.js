@@ -10,13 +10,13 @@ function demo_3() {
 		    slideSpeed: 300,
 		    paginationSpeed: 500,
 		    rewindSpeed: 400,
-		    autoHeight: true,
+		    autoHeight: false,
 		    addClassActive: true,
 		    afterMove: function() {
 		        $('.owl-item.active h1').addClass('animated fadeInUpSmall');
 		        $('.owl-item.active p').addClass('animated-md fadeInUpSmall');
 		        $('.owl-item.active .bttn-div').addClass('animated-lt fadeInUpSmall');
-		    },
+		    },	
 		    beforeMove: function() {
 		        $('.owl-item h1').removeClass('animated fadeInUpSmall');
 		        $('.owl-item p').removeClass('animated-md fadeInUpSmall');
