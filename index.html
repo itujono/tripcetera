@@ -22,8 +22,8 @@
 	  	<main>
 			<section class="hero-header-1">
 				<div class="main-text">
-					<h1 class="animate" data-animate="bounceIn" data-duration="1.5s" data-delay="2s" data-offset="100">Dream<span class="orange">.</span> Click<span class="orange">.</span> Go<span class="orange">.</span></h1>
-	            	<div class="searchable">
+					<h1 class="wow fadeInUp" data-wow-delay="1s">Dream<span class="orange">.</span> Click<span class="orange">.</span> Go<span class="orange">.</span></h1>
+	            	<div class="searchable wow fadeInUp" data-wow-delay="1.4s">
 	            		<form action="submit" class="search-form">
 						  	<div class="search-wrapper">
 							    <input class="search-input" type="text" placeholder="Search apa aja deh..."/>
@@ -57,7 +57,7 @@
                 <div class="container">
                     
                     <div class="main-services-wrapper just-center">
-                        <div class="table-wrapper animate" data-animate="bounceIn" data-duration="1.5s" data-delay="2s" data-offset="100">
+                        <div class="table-wrapper wow fadeInUp" data-wow-delay="1s">
                             <div class="main-services-table primary" style="background-image: url(images/grid1.jpg); background-repeat: no-repeat;">
                                 <span class="main-services"><i class="ti-home icon"></i></span>
                                 <span class="plan">Accomodation</span>
@@ -65,7 +65,7 @@
                                 <a href="#0" class="btn btn-med">Lebih Dalam</a>
                             </div>
                         </div>
-                        <div class="table-wrapper animate" data-animate="bounceIn" data-duration="1.5s" data-delay="2s" data-offset="100">
+                        <div class="table-wrapper wow fadeInDown" data-wow-delay="1.4s">
                             <div class="main-services-table primary" style="background-image: url(images/grid2.jpg); background-repeat: no-repeat;">
                                 <span class="main-services"><i class="ti-truck icon"></i></span>
                                 <span class="plan">Transportation</span>
@@ -73,7 +73,7 @@
                                 <a href="#0" class="btn btn-med">Lebih Dalam</a>
                             </div>
                         </div>
-                        <div class="table-wrapper animate" data-animate="bounceIn" data-duration="1.5s" data-delay="3s" data-offset="100">
+                        <div class="table-wrapper wow fadeInUp" data-wow-delay="1.5s">
                             <div class="main-services-table primary" style="background-image: url(images/grid3.jpg); background-repeat: no-repeat;">
                                 <span class="main-services"><i class="ti-gallery icon"></i></span>
                                 <span class="plan">Et Cetera</span>
@@ -126,13 +126,13 @@
 		                <div class="col-md-12 text-center social-section">
 		                    <h4><strong>Get in touch with us</strong></h4>
 		                    <div class="social-link">
-		                        <a href="https://www.facebook.com/tripcetera" target="_blank">
+		                        <a href="https://www.facebook.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.5s">
 		                            <img id="Image1" src="images/facebook.png">
 		                        </a>
-		                        <a href="https://twitter.com/tripcetera" target="_blank">
+		                        <a href="https://twitter.com/tripcetera" target="_blank" class="wow fadeInUp" data-wow-delay="1.2s">
 		                            <img id="Image2" src="images/twitter.png">
 		                        </a>
-		                        <a href="https://www.instagram.com/tripcetera/" target="_blank">
+		                        <a href="https://www.instagram.com/tripcetera/" target="_blank" class="wow fadeInUp" data-wow-delay="1.7s">
 		                            <img id="Image3" src="images/instagram.png">
 		                        </a>
 		                    </div>
@@ -207,10 +207,7 @@
 	    <script src="assets/js/functions.js"></script>
 	    <script src="assets/js/jquery.preload.js"></script>
 	    <script src="assets/js/jquery.easing.js"></script>
-	    <!-- <script src="assets/js/jquery.smartmenus.js"></script> -->
-	    <!-- <script src="assets/js/smartmenu.script.js"></script> -->
-		<!-- <script src="assets/js/jquery.nicescroll.min.js"></script> -->
-		<!-- <script src="assets/js/jquery-ui.js"></script>	 -->
+	    <script src="assets/js/wow.min.js"></script>
 		<script type='text/javascript' src='assets/js/jquery.customSelect.js'></script>
 	    <script src="assets/js/owl.carousel.js"></script>
 	    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
@@ -220,6 +217,10 @@
         	$('.animate').scrolla({
         		mobile: false;
         	});
+        </script>
+
+        <script>
+            new WOW().init();
         </script>
 
 	    <!-- <script src="assets/js/jquery.carouFredSel-6.2.1-packed.js"></script> -->
