@@ -1723,20 +1723,6 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     transition: all .4s ease;
 }
 
-.main-services-1 .table-wrapper {
-	-webkit-animation-delay: 1s;
-	-webkit-animation-duration: 3s;	
-}
-
-.main-services-1 .table-wrapper:nth-child(2) {
-	-webkit-animation-delay: 2s;
-	-webkit-animation-duration: 3s;}
-
-.main-services-1 .table-wrapper:nth-child(3) {
-	-webkit-animation-delay: 3s;
-	-webkit-animation-duration: 3s;
-}
-
 .main-services-1 .table-wrapper:hover .main-services > i {
     color: #fe6600;
 }
@@ -1758,11 +1744,27 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 }
 
 .main-services-1 .main-services-table.primary {
+	background-size: cover;
     background-color: #fff;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.14), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
     -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.14), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
     -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.14), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
     transition: all .4s ease;
+}
+
+.main-services-table.primary > span, .main-services-table.primary > p {
+	opacity: 0;
+	visibility: hidden;
+	transition: all .4s ease;
+}
+
+.main-services-table.primary:hover {
+	background-image: none !important;
+}
+
+.main-services-table.primary:hover span, .main-services-table.primary:hover p {
+	opacity: 1;
+	visibility: visible;
 }
 
 .main-services-1 .main-services-table {
@@ -1873,11 +1875,6 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
     z-index: 10;
 }
 
-.main-text h1 {
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-}
-
 .searchable {
     margin-bottom: 40px;
 }
@@ -1944,6 +1941,7 @@ button:hover.next2   img {width:14px;height:18px; display:block; background:url(
 .search-wrapper input::placeholder {
   color: #999;
 }
+
 .search-wrapper i {
   position: absolute;
   color: #999;

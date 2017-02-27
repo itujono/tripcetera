@@ -22,11 +22,11 @@
 	  	<main>
 			<section class="hero-header-1">
 				<div class="main-text">
-					<h1 class="animated fadeIn">Dream<span class="orange">.</span> Click<span class="orange">.</span> Go<span class="orange">.</span></h1>
+					<h1 class="animate" data-animate="bounceIn" data-duration="1.5s" data-delay="2s" data-offset="100">Dream<span class="orange">.</span> Click<span class="orange">.</span> Go<span class="orange">.</span></h1>
 	            	<div class="searchable">
 	            		<form action="submit" class="search-form">
 						  	<div class="search-wrapper">
-							    <input class="search-input" type="text" placeholder="Search"/>
+							    <input class="search-input" type="text" placeholder="Search apa aja deh..."/>
 							    <i class="ti-search"></i>
 						  	</div>
 						</form>
@@ -57,24 +57,24 @@
                 <div class="container">
                     
                     <div class="main-services-wrapper just-center">
-                        <div class="table-wrapper animated fadeIn">
-                            <div class="main-services-table primary">
+                        <div class="table-wrapper animate" data-animate="bounceIn" data-duration="1.5s" data-delay="2s" data-offset="100">
+                            <div class="main-services-table primary" style="background-image: url(images/grid1.jpg); background-repeat: no-repeat;">
                                 <span class="main-services"><i class="ti-home icon"></i></span>
                                 <span class="plan">Accomodation</span>
                                 <p class="info1">Cempedak Cina adalah sebuah kesatuan negara yang harus dibersihkan setiap minggu.</p>
                                 <a href="#0" class="btn btn-med">Lebih Dalam</a>
                             </div>
                         </div>
-                        <div class="table-wrapper animated fadeIn">
-                            <div class="main-services-table primary">
+                        <div class="table-wrapper animate" data-animate="bounceIn" data-duration="1.5s" data-delay="2s" data-offset="100">
+                            <div class="main-services-table primary" style="background-image: url(images/grid2.jpg); background-repeat: no-repeat;">
                                 <span class="main-services"><i class="ti-truck icon"></i></span>
                                 <span class="plan">Transportation</span>
                                 <p class="info1">Kelihaian Valentino Rossi dalam menjemur handuk sudah tak pernah terlihat lagi di Madura.</p>
                                 <a href="#0" class="btn btn-med">Lebih Dalam</a>
                             </div>
                         </div>
-                        <div class="table-wrapper animated fadeIn">
-                            <div class="main-services-table primary">
+                        <div class="table-wrapper animate" data-animate="bounceIn" data-duration="1.5s" data-delay="3s" data-offset="100">
+                            <div class="main-services-table primary" style="background-image: url(images/grid3.jpg); background-repeat: no-repeat;">
                                 <span class="main-services"><i class="ti-gallery icon"></i></span>
                                 <span class="plan">Et Cetera</span>
                                 <p class="info1">Bagaimana jika suara jerapah muda tak pernah terlihat oleh mata dan bulu telanjang?</p>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div> <!-- kelar Container main-services-1 -->
-            </section>
+            </section> <!-- kelar section Main Services 1 -->
 
 			<footer style="background-color: #e7e7e7; color: #666; padding-top: 50px; padding-bottom: 50px;">
 		        <div class="container">
@@ -204,7 +204,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	    <script src="dist/js/bootstrap.min.js"></script>
 	    <script src="assets/js/push.navigation.js"></script>
-		<!-- <script src="assets/js/js-intro2.js"></script> -->
 	    <script src="assets/js/functions.js"></script>
 	    <script src="assets/js/jquery.preload.js"></script>
 	    <script src="assets/js/jquery.easing.js"></script>
@@ -215,6 +214,14 @@
 		<script type='text/javascript' src='assets/js/jquery.customSelect.js'></script>
 	    <script src="assets/js/owl.carousel.js"></script>
 	    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+	    <script src="assets/js/scrolla.jquery.min.js"></script>
+        <script>
+        	$('.animate').scrolla({
+        		mobile: false;
+        	});
+        </script>
+
 	    <!-- <script src="assets/js/jquery.carouFredSel-6.2.1-packed.js"></script> -->
 	    <!-- <script src="assets/js/helper-plugins/jquery.touchSwipe.min.js"></script> -->
 		<!-- <script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.min.js"></script> -->
@@ -223,10 +230,11 @@
 
         <script>
             jQuery(document).ready(function($){
-                initialize_scrollreveal();
+                // initialize_scrollreveal();
                 demo_3();				
             });
         </script>
+
 
         <script type="text/javascript">
     		var searchWrapper = document.querySelector('.search-wrapper'),
