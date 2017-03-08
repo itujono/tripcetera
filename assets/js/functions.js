@@ -41,6 +41,8 @@ function demo_3() {
 };
 
 
+
+
 // handle cursor keys		
 var owlbttn = $('#hero-header-1').data('owlCarousel');
 $(document.documentElement).keyup(function(event) {
@@ -50,9 +52,6 @@ $(document.documentElement).keyup(function(event) {
         owlbttn.next();
     }
 });
-
-
-
 
 
 
@@ -505,8 +504,6 @@ function initialize_scrollreveal() {
 	$("html, body").stop().animate({
 		scrollTop: $(t.attr("href")).offset().top
 	}, 700, "easeInOutSine"), e.preventDefault()
-}), $(window).load(function() {
-	$("#preloader").delay(100).fadeOut("slow"), $("html,body").addClass("add-oveflow")
 }), jQuery(document).ready(function(e) {
 	goto_top_page()
 });
